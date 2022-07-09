@@ -1,5 +1,9 @@
 site_name: ExplorViz
 
+docs_dir: 'src'
+
+site_dir: 'docs'
+
 theme:
   name: material
 
