@@ -10,6 +10,8 @@ site_dir: 'docs'
 theme:
   logo: explorviz-logo-white.png
   name: material
+  features:
+    - navigation.tabs
   palette:
     - scheme: default
       primary: blue grey
