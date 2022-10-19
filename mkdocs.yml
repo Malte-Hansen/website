@@ -7,6 +7,8 @@ site_author: "Alexander Krause-Glau"
 docs_dir: "src"
 site_dir: "docs"
 
+edit_uri: ""
+
 markdown_extensions:
   - attr_list
 
