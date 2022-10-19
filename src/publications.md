@@ -1,8 +1,14 @@
+---
+hide:
+  - navigation
+  - toc
+---
+
 # Publications
 
 Below you can find a list of publications that are directly related to ExplorViz:
 
-- Krause-Glau, A., Bader M. and Hasselbring, W. ”[Collaborative Software Visualization for Program Comprehension](https://vissoft.info/2022/program.html)”. In: _IEEE Working Conference on Software Visualization_. 2022
+- Krause-Glau, A., Bader M. and Hasselbring, W. ”[Collaborative Software Visualization for Program Comprehension](https://vissoft.info/2022/program.html)”. In: _IEEE Working Conference on Software Visualization_. 2022. In press.
 - Krause-Glau, A. and Hasselbring, W. ”[Scalable Collaborative Software Visualization as a Service](https://conferences.computer.org/IC2E/2022/papers.html)”. In: _IEEE International Conference on Cloud Engineering_. 2022. In press.
 - Krause-Glau, A., Hansen M. and Hasselbring, W. ”[Collaborative program comprehension via software visualization in extended reality](https://www.sciencedirect.com/science/article/pii/S095058492200132X)”. In: _Information and Software Technology_. 2022
 - Krause, A., Hansen M. and Hasselbring, W. ”[Live Visualization of Dynamic Software Cities with Heat Map Overlays](https://ieeexplore.ieee.org/document/9604847)”. In: _IEEE Working Conference on Software Visualization_. 2021
