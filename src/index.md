@@ -19,7 +19,7 @@ A Software Visualization as a service (SVaaS) approach to facilitate program com
 </center>
 
 <center>
-[Publications](publications){ .md-button }
+[Getting started](getting-started){ .md-button }
 </center>
 
 ---

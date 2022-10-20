@@ -6,6 +6,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://explorviz.dev/getting-started/</loc>
+         <lastmod>2022-10-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://explorviz.dev/publications/</loc>
          <lastmod>2022-10-20</lastmod>
          <changefreq>daily</changefreq>
