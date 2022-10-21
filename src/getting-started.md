@@ -6,7 +6,7 @@ hide:
 
 # Getting started
 
-Below you can find instructions that will set up ExplorViz frontend component with exemplary data:
+Below you can find instructions that will set up a demo of ExplorViz' frontend component with exemplary data. You can also [try out our hosted demo instance](http://samoa.se.informatik.uni-kiel.de:8090):
 
 1\. Clone the [deployment](https://github.com/ExplorViz/deployment) repo and `cd` into the correct directory
 

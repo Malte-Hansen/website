@@ -20,6 +20,7 @@ A Software Visualization as a service (SVaaS) approach to facilitate program com
 
 <center>
 [Getting started](getting-started){ .md-button }
+[Demo](http://samoa.se.informatik.uni-kiel.de:8090){ .md-button }
 </center>
 
 ---
