@@ -19,8 +19,12 @@ A Software Visualization as a service (SVaaS) approach to facilitate program com
 </center>
 
 <center>
-[Getting started](getting-started){ .md-button }
-[Demo](http://samoa.se.informatik.uni-kiel.de:8090){ .md-button }
+<a href="1-getting-started">
+<button class="md-button" name="button">Getting started</button>
+</a>
+<a href="http://samoa.se.informatik.uni-kiel.de:8090">
+<button class="md-button" style="--md-primary-fg-color:#5bb571;--md-accent-fg-color:#5bb571" name="button">Demo</button>
+</a>
 </center>
 
 ---
