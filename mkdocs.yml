@@ -21,6 +21,7 @@ theme:
   name: material
   favicon: images/favicon.png
   features:
+    - toc.follow
     - navigation.tabs
   palette:
     # Palette toggle for automatic mode

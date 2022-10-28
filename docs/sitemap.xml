@@ -2,22 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://explorviz.dev/</loc>
-         <lastmod>2022-10-23</lastmod>
+         <lastmod>2022-10-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://explorviz.dev/1-getting-started/</loc>
-         <lastmod>2022-10-23</lastmod>
+         <lastmod>2022-10-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://explorviz.dev/2-fundamentals/</loc>
-         <lastmod>2022-10-23</lastmod>
+         <lastmod>2022-10-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://explorviz.dev/3-publications/</loc>
-         <lastmod>2022-10-23</lastmod>
+         <lastmod>2022-10-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

@@ -331,9 +331,74 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Getting started
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Getting started
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quick-start" class="md-nav__link">
+    Quick start
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visualize-a-java-application" class="md-nav__link">
+    Visualize a Java application
+  </a>
+  
+    <nav class="md-nav" aria-label="Visualize a Java application">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#start-explorviz" class="md-nav__link">
+    Start ExplorViz
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#start-the-target-java-application" class="md-nav__link">
+    Start the target Java application
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explore-the-runtime-behavior" class="md-nav__link">
+    Explore the runtime behavior
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -379,7 +444,7 @@
               
                 
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -390,6 +455,55 @@
   
     
   
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quick-start" class="md-nav__link">
+    Quick start
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visualize-a-java-application" class="md-nav__link">
+    Visualize a Java application
+  </a>
+  
+    <nav class="md-nav" aria-label="Visualize a Java application">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#start-explorviz" class="md-nav__link">
+    Start ExplorViz
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#start-the-target-java-application" class="md-nav__link">
+    Start the target Java application
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explore-the-runtime-behavior" class="md-nav__link">
+    Explore the runtime behavior
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -405,7 +519,8 @@
 
 
 <h1 id="getting-started">Getting started</h1>
-<p>Below you can find instructions that will set up a demo of ExplorViz' frontend component with exemplary data. You can also <a href="http://samoa.se.informatik.uni-kiel.de:8090">try out our hosted demo instance</a>:</p>
+<h2 id="quick-start">Quick start</h2>
+<p>Below you can find instructions that will set up a demo of ExplorViz' frontend component with exemplary data, i.e., mocked backend and target application. You can also <a href="http://samoa.se.informatik.uni-kiel.de:8090">try out our hosted demo instance</a>:</p>
 <p>1. Clone the <a href="https://github.com/ExplorViz/deployment">deployment</a> repo and <code>cd</code> into the correct directory</p>
 <pre><code class="language-sh">git clone https://github.com/ExplorViz/deployment.git
 cd deployment/frontend-demo/
@@ -414,6 +529,36 @@ cd deployment/frontend-demo/
 <pre><code class="language-sh">docker compose up -d
 </code></pre>
 <p>3. Open <a href="http://localhost:8080">http://localhost:8080</a> in your web browser, e.g. Mozilla Firefox.</p>
+<hr />
+<h2 id="visualize-a-java-application">Visualize a Java application</h2>
+<p>Instead of using the approach that is shown above, you can also start the complete software stack of ExplorViz to visualize and explore your desired Java application's runtime behavior. Below you can find instructions that will set up ExplorViz' complete software stack with a dynamically analyzed example application.</p>
+<h3 id="start-explorviz">Start ExplorViz</h3>
+<p>1. Clone the <a href="https://github.com/ExplorViz/deployment">deployment</a> repo and <code>cd</code> into the correct directory</p>
+<pre><code class="language-sh">git clone https://github.com/ExplorViz/deployment.git
+cd deployment/docker/
+</code></pre>
+<p>2. Use <code>docker compose</code> to start ExplorViz' software environment.</p>
+<pre><code class="language-sh">docker compose -f docker-compose.environment.yml up -d
+</code></pre>
+<p>3. Use <code>docker compose</code> to start ExplorViz' services. The frontend is served via Nginx and by default runs on port <code>8080</code>. You can change ports and hostnames in the (hidden) <code>.env</code> file.</p>
+<pre><code class="language-sh">docker compose -f docker-compose.explorviz.yml up -d
+</code></pre>
+<p>4. Open <a href="http://localhost:8080">http://localhost:8080</a> in your web browser, e.g. Mozilla Firefox.</p>
+<p>5. You will see a <a href="/2-fundamentals">Software Landscape</a> called "Default Landscape" in a table. Click on the <code>info icon</code> to see the <a href="/2-fundamentals">Landscape Token</a>'s (normally auto-generated) <code>value</code> and <code>secret</code>. This pair of data is used in the upcoming instrumentation configuration. With that, every incoming data record can be mapped to a user and the software landscape which is identified by the landscape token.</p>
+<h3 id="start-the-target-java-application">Start the target Java application</h3>
+<p>1. <code>cd</code> into the example applications directory. We use the <a href="https://github.com/spring-projects/spring-petclinic">Spring PetClinic</a> as an example for now.</p>
+<pre><code class="language-sh">cd deployment/example-applications/petclinic-demo/
+</code></pre>
+<p>2. Open the hidden <code>.env</code> file. Normally, this is the instrumentation configuration file where you would paste your token's <code>value</code> and <code>secret</code>. Since we use the default token for this instruction, you don't need that.</p>
+<p>3. Use <code>docker compose</code> to start the PetClinic.</p>
+<pre><code class="language-sh">docker compose up -d
+</code></pre>
+<h3 id="explore-the-runtime-behavior">Explore the runtime behavior</h3>
+<p>1. Open <a href="http://localhost:8080">http://localhost:18080</a> in your web browser and generate some load by clicking around.</p>
+<p>2. Open <a href="http://localhost:8080">http://localhost:8080</a> in your web browser and click the <code>loop icon</code> to open the visualization of the Spring PetClinics runtime behavior.</p>
+<p>3. The visualization is updated every tenth second and shows the aggregated runtime behavior of the Spring PetClinic.</p>
+<p>4. (Optional) Right click the white background to access the context menu. Here, you can find additional visualization approaches, e.g., virtual reality or augmented reality.</p>
+<p>5. (Optional) Within the context menu you can also open the sidebar. There you will find visualization settings and the collaboration tab that enables you to join or host a collaborative session.</p>
 
 
 
@@ -513,7 +658,7 @@ cd deployment/frontend-demo/
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs"], "search": "../assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["toc.follow", "navigation.tabs"], "search": "../assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
       <script src="../assets/javascripts/bundle.078830c0.min.js"></script>
