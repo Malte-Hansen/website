@@ -32,7 +32,7 @@ Instead of using the approach that is shown above, you can also start the comple
 
 ### Start ExplorViz
 
-1\. Clone the [deployment](https://github.com/ExplorViz/deployment) repo and `cd` into the correct directory
+1\. Clone the [deployment](https://github.com/ExplorViz/deployment) repo and `cd` into the correct directory.
 
 ```sh
 git clone https://github.com/ExplorViz/deployment.git
@@ -73,7 +73,7 @@ docker compose up -d
 
 ### Explore the runtime behavior
 
-1\. Open [http://localhost:18080](http://localhost:8080) in your web browser and generate some load by clicking around.
+1\. Open [http://localhost:18080](http://localhost:18080) in your web browser and generate some load by clicking around.
 
 2\. Open [http://localhost:8080](http://localhost:8080) in your web browser and click the `loop icon` to open the visualization of the Spring PetClinics runtime behavior.
 
